@@ -5,7 +5,9 @@
   "devDependencies": {},
   "jspm": {
     "dependencies": {
+      "backbone": "npm:backbone@^1.2.3",
       "es5-shim": "npm:es5-shim@^4.4.1",
+      "jquery": "npm:jquery@^2.1.4",
       "underscore": "npm:underscore@^1.8.3"
     },
     "devDependencies": {

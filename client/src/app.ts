@@ -3,6 +3,32 @@ export let __hotReload = true;
 
 // famous library to try out typing with
 import * as _ from "underscore";
+import * as Backbone from "backbone";
+
+class DataModel extends Backbone.Model {
+  attributes: {
+    firstName: string;
+    lastName: string;
+  };
+}
+
+class MyView extends Backbone.View<DataModel> {
+  template = _.template("<h1><%= firstName %></h1><h2><%= lastName %></h2>");
+  render() {
+    this.$el.html(this.template(this.model.toJSON()));
+    return this;
+  }
+}
+
+let myModel = new DataModel({
+  firstName: "first",
+  lastName: "last",
+});
+let myView = new MyView({
+  el: "#backboneView",
+  model: myModel
+});
+myView.render();
 
 // no type definition for external js lib
 // so we define it in `shims.d.ts` shim

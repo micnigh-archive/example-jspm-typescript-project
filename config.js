@@ -18,7 +18,9 @@ System.config({
   },
 
   map: {
+    "backbone": "npm:backbone@1.2.3",
     "es5-shim": "npm:es5-shim@4.4.1",
+    "jquery": "npm:jquery@2.1.4",
     "typescript": "npm:typescript@1.7.5",
     "underscore": "npm:underscore@1.8.3",
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -32,6 +34,10 @@ System.config({
     },
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
+    },
+    "npm:backbone@1.2.3": {
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "underscore": "npm:underscore@1.8.3"
     },
     "npm:es5-shim@4.4.1": {
       "process": "github:jspm/nodelibs-process@0.1.2"
