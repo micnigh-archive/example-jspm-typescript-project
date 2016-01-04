@@ -1,0 +1,20 @@
+{
+  "name": "example-jspm-typescript-project",
+  "description": "JSPM typescript example project",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "jspm": {
+    "dependencies": {
+      "es5-shim": "npm:es5-shim@^4.4.1",
+      "underscore": "npm:underscore@^1.8.3"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/micnigh/example-jspm-typescript-project.git"
+  }
+}
