@@ -68,7 +68,7 @@ tsd install backbone --save
 For example, to add [es5-shim]
 
 ```bash
-# install jspm npm package for backbone
+# install jspm npm package for es5-shim
 # saves dependencies in `config.js` mappings
 jspm install npm:es5-shim
 
@@ -77,7 +77,6 @@ jspm install npm:es5-shim
 Then we can load it with
 
 ```js
-// import external libs without caring about type
 import "es5-shim";
 import "es5-shim/es5-sham";
 ```
