@@ -3,3 +3,5 @@ jspm_packages
 typings
 /.*/
 *.log
+
+/lib.dev.js*

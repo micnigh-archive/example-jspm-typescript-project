@@ -34,12 +34,13 @@ jspm-server
 ## Bundle
 
 ```bash
-# bundle all together, including libs, no `system.js` dependency
-jspm bundle-sfx --minify client/src/app .tmp/all.js
+# bundle development libs
+jspm bundle client/src/app - [npm:**/*] - [github:**/*] app.js --inject
+jspm bundle client/src/**/* - [client/src/**/*] lib.dev.js --inject
 
-# bundle with libs/app seperate, requires `system.js` lib and config loaded
-jspm bundle --minify client/src/app - [npm:**/*] - [github:**/*] .tmp/app.js
-jspm bundle --minify client/src/**/* - [client/src/**/*] .tmp/lib.js
+# bundle production libs
+jspm bundle client/src/app - [npm:**/*] - [github:**/*] app.js
+jspm bundle client/src/**/* - [client/src/**/*] lib.js
 
 ```
 

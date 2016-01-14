@@ -25,6 +25,18 @@ let lastElement = sliceLastNumberArray(test);
 
 console.log(lastElement);
 
-import A from "./a";
+import * as A from "./a";
 
-A("Bobby");
+A.default("Billy");
+
+document.getElementById("content").innerHTML = A.sayIt("Billy bob");
+
+import "jquery";
+
+$("#content").css({
+  backgroundColor: "#333",
+  color: "#fff",
+  fontWeight: "bold",
+  fontSize: "24px",
+  padding: "12px 12px",
+});
